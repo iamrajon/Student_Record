@@ -1,0 +1,30 @@
+{% extends 'core/base.html' %}
+{% block titel %}  Student | Update Data {% endblock titel %}   
+
+{% block content %}
+
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-12 col-md-6 offset-md-3">
+            <h4 class="text-center fw-bolder text-dark my-3">Update Student Data </h4>
+            <form action="" class="bg-light p-3" method="post" novalidate>
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="mb-3">
+                        {% comment %} {{field.label_tag}} {% endcomment %}
+                        {{field}}
+                        <p>{{field.errors | striptags }}</p>
+                    </div>
+                {% endfor %}
+                <div class="d-inline">
+                    <input type="submit" value="Update" class="btn btn-success">
+                    <a href="{% url 'create-student' %}" class="btn btn-primary w-20">Back</a>
+                </div>                
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+{% endblock content %}
