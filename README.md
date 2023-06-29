@@ -1,1 +1,1 @@
-This is simple CRUD project made in Django Framework. You Can clone the project and view the project 
+This is simple project made through Django Framework, It performs CRUD operation on Student Record Management System. If you are interested you can clone the project and overview!
