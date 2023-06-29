@@ -1,0 +1,1 @@
+This is simple CRUD project made in Django Framework. You Can clone the project and view the project 
